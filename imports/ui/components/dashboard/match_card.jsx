@@ -9,7 +9,7 @@ class MatchCard extends Component {
   }
 
   render() {
-    const { oneLineIntro, lookingFor, ownCard, timezone } = this.props;
+    const { oneLineIntro, lookingFor, ownCard, timezone, splitTimezones } = this.props;
     return (
       <Card>
         <Card.Body>
@@ -33,6 +33,7 @@ class MatchCard extends Component {
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">{timezone}</small>
+          <small className="text-muted">{splitTimezones}</small>
         </Card.Footer>
       </Card>
     );
